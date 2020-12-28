@@ -1,26 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+.bgimg {
+  width: 100%;
+  height: 820px;
+  background: #111111 url("../images/homepage/hero-bg-desktop.jpg") center no-repeat;
+  display: flex;
+  align-items: center;
+}
 
 
 .hero{
 
   border-left-width: 30px;
-
   margin-left: 90px;
-  height: 450px;
-  width: 350px;
+  height: 100%;
+  width: 600px;
   background-color: #111111;
-position: absolute;
-text-align: left;
+  text-align: left;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
 }
 
-h1{ font-family: 'Spartan Bold', sans-serif;
-color: white;
-position: relative;
-
+h1{
+  font-family: 'Spartan Bold', sans-serif;
+  color: white;
   margin-left: 80px;
-    margin-top: 10px;
-    margin-bottom: 50px;
+  margin-bottom: 50px;
+  position: absolute;
+  top: 30px;
  }
 
 
@@ -48,25 +62,14 @@ p{position: relative;
 }
 
 
-
-
-
-
-
-
-    a{position: relative;
-      margin-left: 80px;
-      margin-top: 50px;
-
-
-
-
-
+a{position: relative;
+  margin-left: 80px;
 }
 a:hover{
   color: #ffffff;
 }
 .btn {
+  width: 180px;
   background: #111111;
   background-image: -webkit-linear-gradient(top, #111111, #111111);
   background-image: -moz-linear-gradient(top, #111111, #111111);
@@ -113,9 +116,5 @@ a:hover{
 body {
     font-family: 'Spartan', sans-serif;
     margin: 0;
-    position: absolute;
-    left: auto;
     color: white;
-
-
 }
